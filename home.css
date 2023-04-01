@@ -1,0 +1,86 @@
+/* botões */
+.abas{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    background-image: url('img/bg1.jpg');
+    
+}
+.abas button {
+    border:none;
+    height: 100%; 
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255);
+    font-family: 'Metal Mania';
+    border-left: 2px solid rgb(0, 0, 0);
+    color: #000000;
+}
+.abas button:hover{
+    
+    color: blueviolet;
+}
+.abas button:active{
+    background-color: rgb(84, 84, 84);
+    color: aliceblue;
+    transition: all .5s;
+}
+.abas .ativa{
+    background-color: rgb(84, 84, 84);
+    color: aliceblue;
+    transition: all .5s;
+}
+/*  */
+.catalogo {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px , 1fr));
+    grid-gap: 30px;
+   
+
+    padding: 30px 30px;
+}
+.catalogo .produtos {
+    background-color: rgb(104, 8, 164);
+    text-align: center;
+    width: 190px;
+    height: 300px;
+   
+    border-radius: 30px;
+
+    padding: 50px ;
+}
+ .catalogo .produtos:hover{
+    width: 198px;
+    height: 308px;
+    border: 3px solid rgb(210, 152, 6)
+}
+ .produtos:hover h2{
+    font-size: 35px;
+}
+.produtos:hover button{
+    border: 1px solid rgb(210, 152, 6)
+}
+.produtos h2{
+    padding-top: 10px;
+    font-family: 'Metal Mania';
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.produtos p{
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.produtos button {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 25px;
+    font-family: 'Metal Mania';
+}
